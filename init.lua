@@ -417,6 +417,8 @@ require('lazy').setup({
         pickers = {
           buffers = {
             initial_mode = 'normal',
+            sort_lastused = true,
+            sort_mru = true,
           },
         },
 
