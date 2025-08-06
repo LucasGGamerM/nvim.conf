@@ -415,6 +415,10 @@ require('lazy').setup({
         -- },
 
         pickers = {
+          find_files = {
+            hidden = true,
+          },
+
           buffers = {
             initial_mode = 'normal',
             sort_lastused = true,
