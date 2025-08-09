@@ -697,6 +697,7 @@ require('lazy').setup({
         -- ts_ls = {},
         --
         jedi_language_server = {},
+        bashls = {},
 
         lua_ls = {
           -- cmd = { ... },
