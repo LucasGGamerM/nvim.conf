@@ -93,6 +93,7 @@ return {
       --   end,
       --   desc = '[P]Search for complete tasks',
       -- },
+
       -- List git branches with Snacks_picker to quickly switch to a new branch
       {
         '<leader>gb',
