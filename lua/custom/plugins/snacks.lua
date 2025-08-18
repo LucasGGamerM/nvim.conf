@@ -93,7 +93,7 @@ return {
       --   end,
       --   desc = '[P]Search for complete tasks',
       -- },
-      -- -- List git branches with Snacks_picker to quickly switch to a new branch
+      -- List git branches with Snacks_picker to quickly switch to a new branch
       {
         '<leader>gb',
         function()
@@ -140,6 +140,68 @@ return {
         end,
         desc = '[S]earch [F]iles',
       },
+      -- Resume search
+      {
+        '<leader>sr',
+        function()
+          Snacks.picker.resume {
+            -- layout = 'vertical',
+          }
+        end,
+        desc = '[R]esume [S]earch',
+      },
+      -- Search help
+      {
+        '<leader>sh',
+        function()
+          Snacks.picker.help {
+            -- things
+          }
+        end,
+        desc = '[S]earch [H]elp',
+      },
+      -- Search recent files
+      {
+        '<leader>s.',
+        function()
+          Snacks.picker.recent {
+            -- things
+          }
+        end,
+        desc = '[S]earch Recent Files',
+      },
+      -- See last search
+      {
+        '<leader>ss',
+        function()
+          Snacks.picker.recent {
+            -- things
+          }
+        end,
+        desc = '[S]earch Recent Files',
+      },
+      -- Search for word
+      {
+        '<leader>sw',
+        function()
+          Snacks.picker.grep_word {
+            -- Exclude results from grep picker
+            -- I think these have to be specified in gitignore syntax
+            -- exclude = { 'dictionaries/words.txt' },
+          }
+        end,
+        desc = '[S]earch current [W]ord',
+      },
+      -- Search for pickers
+      {
+        '<leader>sp',
+        function()
+          Snacks.picker.pick {
+            -- a bunch of nothings
+          }
+        end,
+        desc = '[S]earch [P]ickers',
+      },
       -- Navigate my buffers
       {
         '<leader><leader>',
@@ -167,7 +229,7 @@ return {
             -- layout = "ivy",
           }
         end,
-        desc = '[ ] Find existing buffers',
+        desc = '[ ] Find existinng buffers',
       },
     },
     opts = {
