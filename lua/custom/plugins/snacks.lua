@@ -101,7 +101,7 @@ return {
             layout = 'select',
           }
         end,
-        desc = 'Select Git [B]ranches',
+        desc = '[S]elect Git [B]ranches',
       },
       -- Search diagnostics
       {
