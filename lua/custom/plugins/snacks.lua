@@ -232,6 +232,14 @@ return {
         end,
         desc = '[ ] Find existinng buffers',
       },
+      {
+        '\\',
+        function()
+          Snacks.explorer.open()
+        end,
+        desc = 'Explorer reveal',
+        silent = true,
+      },
     },
     opts = {
       -- your configuration comes here
@@ -239,7 +247,7 @@ return {
       -- refer to the configuration section below
       bigfile = { enabled = true },
       dashboard = { enabled = true },
-      explorer = { enabled = false },
+      explorer = { enabled = true },
       indent = { enabled = false },
       input = { enabled = true },
 
