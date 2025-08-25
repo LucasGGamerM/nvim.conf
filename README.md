@@ -1,5 +1,7 @@
 # kickstart.nvim
 
+# I moved my neovim config to my dotfiles repo, therefore this repo will not have up to date modifications to my neovim config
+
 ## Introduction
 
 A starting point for Neovim that is:
